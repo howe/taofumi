@@ -1,8 +1,8 @@
-	ZeroClipboard.setMoviePath("/js/ZeroClipboard10.swf");
+ZeroClipboard.setMoviePath("/js/ZeroClipboard10.swf");
 	
-function $(id) { 
-	return document.getElementById(id); 
-}  
+//function $(id) { 
+//	return document.getElementById(id); 
+//}  
 
 function toClipboard(copy_id,input_id,msg) {  
 	var clip = new ZeroClipboard.Client();  
