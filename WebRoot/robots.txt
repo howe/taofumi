@@ -1,7 +1,3 @@
-User-agent: *
-Disallow: /admin
-Disallow: /css
-Disallow: /images
-Disallow: /js
+User-agent: *Disallow: /adminDisallow: /cssDisallow: /imagesDisallow: /js
 
 
