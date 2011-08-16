@@ -2,7 +2,7 @@
 		<p style="width: 830px">&copy;
 			<a class="right" style="color:#999999" href="http://tb4.me/" title="淘网址分享">淘网址分享</a>&nbsp;
 			<a class="icp" style="color: #999999" href="http://www.miibeian.gov.cn/" title="ICP备案号" target="_blank">苏ICP备10226088号-9</a>&nbsp;
-			<a class="mail" style="color: #999999" href="mailto:howechiang@gmail.com" title="联系我们" target="_blank">联系我们</a>
+			<a class="mail" style="color: #999999" href="mailto:info@taofumi.com" title="联系我们" target="_blank">联系我们</a>
 		</p>
 	</div>
 <script type="text/javascript">
