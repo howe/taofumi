@@ -13,7 +13,7 @@
 </script>
 <link rel="stylesheet" href="./css/style.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="./css/share.css" type="text/css" media="screen" />
-<script type="text/javascript" src="./js/jquery-1.6.2.js"></script>
+<script type="text/javascript" src="./js/jquery-1.6.2.min.js"></script>
 <script type="text/javascript" src="./js/index.js"></script>
 <script src="./js/ZeroClipboard.js" type="text/javascript"></script>
 <script src="./js/ZeroTool.js" type="text/javascript"></script>
@@ -32,10 +32,10 @@ body {
 			<p align="center">
 				<label>
 					<input style="color: #707070;" onblur="setInputTip(this)" onclick="clearValue(this)" type="text"
-						class="text" id="url" name="url" size="100" />
+				class="text" id="url" name="url" size="100" />
 				</label> <br/> 
 				<label>
-					<input class="text" style="color: #707070;" type="text" id="add-keyword" name="keyword" size="15"
+					<input class="text" style="color:#707070;" type="text" id="add-keyword" name="keyword" size="15"
 						readonly="readonly" />
 				</label>
 			</p>
