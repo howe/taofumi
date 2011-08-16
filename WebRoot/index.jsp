@@ -9,14 +9,14 @@
 <meta name="keywords" content="淘网址分享,淘宝购物,网上购物,购物分享" />
 <title>淘网址分享 - 淘宝购物网址社会化分享</title>
 <script type="text/javascript">
-	document.oncontextmenu = function(e) {return false;}
+//	document.oncontextmenu = function(e) {return false;}
 </script>
-<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="/css/share.css" type="text/css" media="screen" />
-<script type="text/javascript" src="/js/jquery-1.6.2.js"></script>
-<script type="text/javascript" src="/js/index.js"></script>
-<script src="/js/ZeroClipboard.js" type="text/javascript"></script>
-<script src="/js/ZeroTool.js" type="text/javascript"></script>
+<link rel="stylesheet" href="./css/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="./css/share.css" type="text/css" media="screen" />
+<script type="text/javascript" src="./js/jquery-1.6.2.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+<script src="./js/ZeroClipboard.js" type="text/javascript"></script>
+<script src="./js/ZeroTool.js" type="text/javascript"></script>
 <style>
 body {
 	-moz-user-select: none;
@@ -25,7 +25,7 @@ body {
 </head>
 
 <body class="index desktop" onselectstart="return false;">
-<%@ include file=”head.jsp” %> 
+<%@ include file="head.jsp" %> 
 	<div id="wrap" style="width: 830px">
 		<br />
 		<form method="post" action="">
@@ -47,6 +47,6 @@ body {
 		</form>
 	</div>
 	
-<%@ include file=”foot.jsp” %> 
+<%@ include file="foot.jsp" %> 
 </body>
 </html>
