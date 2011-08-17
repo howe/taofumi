@@ -6,6 +6,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1><%=request.getAttribute("obj") %></h1>
+<jsp:forward page = "/WEB-INF/jsp/user/signup.jsp" />
 </body>
 </html>
