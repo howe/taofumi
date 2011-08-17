@@ -1,0 +1,22 @@
+#signLeft {	padding: 20px 30px 25px 30px; }
+
+#signLeftWrap { width: 440px; }
+#signRight ul { margin: 0px; }
+#signUpForm ul, #signUpForm ul li { list-style-type: none; margin: 0px; }
+
+.spanLink { color: #00AEF6 !important; }
+.spanLink:hover { cursor: pointer; text-decoration: underline; }
+.plan-inner span.spanLink {
+	font-weight: normal;
+}
+
+.pointer { cursor: pointer; }
+
+/**popup**/
+.outerDIV { background-color: #CCCCCC;  }
+.innerDIV { background-color: #383738; padding: 12px; }
+.innerDIV, .innerDIV div, .innerDIV span, .innerDIV p { color: #FFF; }
+
+.fR { float: right; text-align: left; }
+.fL { float: left; }
+.clearDIV { font-size: 1px; line-height: 1px; height: 0px; clear: both; overflow: hidden; }
