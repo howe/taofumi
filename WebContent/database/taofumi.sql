@@ -4,13 +4,13 @@ Navicat MySQL Data Transfer
 Source Server         : 本地海豚
 Source Server Version : 50207
 Source Host           : localhost:3306
-Source Database       : tb4me
+Source Database       : taofumi
 
 Target Server Type    : MYSQL
 Target Server Version : 50207
 File Encoding         : 65001
 
-Date: 2011-08-15 22:01:33
+Date: 2011-08-17 15:00:45
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -21,12 +21,12 @@ SET FOREIGN_KEY_CHECKS=0;
 DROP TABLE IF EXISTS `tb_log`;
 CREATE TABLE `tb_log` (
   `id` varchar(255) NOT NULL,
-  `operTime` datetime NULL,
-  `keyword` varchar(200) NULL,
-  `referrer` varchar(1000) NULL,
-  `userAgent` varchar(1000) NULL,
-  `ipAddress` varchar(41) NULL,
-  `district` varchar(100) NULL,
+  `operTime` datetime DEFAULT NULL,
+  `keyword` varchar(200) DEFAULT NULL,
+  `referrer` varchar(1000) DEFAULT NULL,
+  `userAgent` varchar(1000) DEFAULT NULL,
+  `ipAddress` varchar(41) DEFAULT NULL,
+  `district` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -40,8 +40,8 @@ CREATE TABLE `tb_log` (
 DROP TABLE IF EXISTS `tb_openid`;
 CREATE TABLE `tb_openid` (
   `id` varchar(255) NOT NULL,
-  `userId` varchar(255) NULL,
-  `openIdCode` varchar(200) NULL,
+  `userId` varchar(255) DEFAULT NULL,
+  `openIdCode` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -55,8 +55,8 @@ CREATE TABLE `tb_openid` (
 DROP TABLE IF EXISTS `tb_relation`;
 CREATE TABLE `tb_relation` (
   `id` varchar(255) NOT NULL,
-  `userId` varchar(255) NULL,
-  `urlId` varchar(255) NULL,
+  `userId` varchar(255) DEFAULT NULL,
+  `urlId` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -70,15 +70,15 @@ CREATE TABLE `tb_relation` (
 DROP TABLE IF EXISTS `tb_url`;
 CREATE TABLE `tb_url` (
   `id` varchar(255) NOT NULL,
-  `keyword` varbinary(200) NULL,
-  `url` varchar(1000) NULL,
-  `tbkUrl` varchar(1500) NULL,
+  `keyword` varbinary(200) DEFAULT NULL,
+  `url` varchar(1000) DEFAULT NULL,
+  `tbkUrl` varchar(1500) DEFAULT NULL,
   `image` varchar(1000) DEFAULT '''http://tb4.me/images/yourls-logo.png''',
-  `title` varchar(2000) NULL,
-  `createTime` datetime NULL,
-  `ip` varchar(41) NULL,
-  `clicks` int(11) NULL,
-  `useMode` char(1) NULL COMMENT '0软删除/1启用',
+  `title` varchar(2000) DEFAULT NULL,
+  `createTime` datetime DEFAULT NULL,
+  `ip` varchar(41) DEFAULT NULL,
+  `clicks` int(11) DEFAULT NULL,
+  `useMode` char(1) DEFAULT NULL COMMENT '0软删除/1启用',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -92,10 +92,10 @@ CREATE TABLE `tb_url` (
 DROP TABLE IF EXISTS `tb_user`;
 CREATE TABLE `tb_user` (
   `id` varchar(255) NOT NULL,
-  `userName` varchar(20) NULL,
-  `password` varchar(255) NULL,
-  `email` varchar(100) NULL,
-  `safeCode` varchar(255) NULL COMMENT '找回密码用的6位~8位数字，加密存数据库。',
+  `userName` varchar(20) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `safeCode` varchar(255) DEFAULT NULL COMMENT '找回密码用的6位~8位数字，加密存数据库。',
   `identify` char(1) DEFAULT '2' COMMENT '0管理员/1VIP用户/2普通用户',
   `status` char(1) DEFAULT '0' COMMENT '0启用/1停用',
   PRIMARY KEY (`id`)
