@@ -18,7 +18,7 @@
 <div class="clear"></div>
     
     <div id="pageInner">
-    <img src="images/signup.gif" id="pageTitle" height="35">
+    <img src="../images/signup.gif" id="pageTitle" height="35">
     <hr style="height:1px; margin-bottom:35px; background:#444444;">
     <form id="signUpForm" name="signUpForm" onSubmit="return false;">
       <div id="signLeftWrap">     	
@@ -71,15 +71,15 @@
     <div id="signRight" style="width:265px">
     	<h3>合作网站帐号登录</h3>
     	<div id="social" style="border:thick; background-color:#F6F6F6" align="center"> 		
-			<ul><a class="social_sina" href="#" title="与新浪微博连接">&nbsp;</a>&nbsp;&nbsp;<a class="social_tb" href="#" title="用淘宝帐号登录">&nbsp;</a></ul>
-			<ul><a class="social_alipay" href="#" title="支付宝快捷登录">&nbsp;</a>&nbsp;&nbsp;<a class="social_tenpay" href="#" title="与财付通链接">&nbsp;</a></ul>
-            <ul><a class="social_sohu" href="#" title="与搜狐微博连接">&nbsp;</a>&nbsp;&nbsp;<a class="social_163" href="#" title="与网易微博链接">&nbsp;</a></ul>
-            <ul><a class="social_qq" href="#" title="用QQ帐号登录">&nbsp;</a>&nbsp;&nbsp;<a class="social_51" href="#" title="与51.com连接">&nbsp;</a></ul>
-            <ul><a class="social_gg" href="#" title="与Google连接">&nbsp;</a>&nbsp;&nbsp;<a class="social_msn" href="#" title="用MSN帐号登录">&nbsp;</a></ul>
-            <ul><a class="social_ty" href="#" title="天涯社区用户登录">&nbsp;</a>&nbsp;&nbsp;<a class="social_db" href="#" title="用豆瓣帐号登录">&nbsp;</a></ul>
-            <ul><a class="social_yahoo" href="#" title="与Yahoo!连接">&nbsp;</a>&nbsp;&nbsp;<a class="social_baidu" href="#" title="与百度连接">&nbsp;</a></ul>
-            <ul><a class="social_sd" href="#" title="与盛大网络连接">&nbsp;</a>&nbsp;&nbsp;<a class="social_kx" href="#" title="用开心帐号登录">&nbsp;</a></ul>
-            <ul><a class="social_renren" href="#" title="与人人网连接">&nbsp;</a>&nbsp;&nbsp;<a class="social_360" href="#" title="用360帐号登录">&nbsp;</a></ul>
+			<ul><a href="#" title="与新浪微博连接"><img src="../images/social_sina.png" title="与新浪微博连接"/></a>&nbsp;&nbsp;<a href="#" title="用淘宝帐号登录"><img src="../images/social_tb.png" title="用淘宝帐号登录"/></a></ul>
+			<ul><a href="#" title="支付宝快捷登录"><img src="../images/social_alipay.png" title="支付宝快捷登录"/></a>&nbsp;&nbsp;<a href="#" title="与财付通链接"><img src="../images/social_tenpay.png" title="与财付通链接"/></a></ul>
+            <ul><a href="#" title="与搜狐微博连接"><img src="../images/social_sohu.png" title="与搜狐微博连接"/></a>&nbsp;&nbsp;<a href="#" title="与网易微博链接"><img src="../images/social_163.png" title="与网易微博链接"/></a></ul>
+            <ul><a href="#" title="用QQ帐号登录"><img src="../images/social_qq.png" title="用QQ帐号登录"/></a>&nbsp;&nbsp;<a href="#" title="与51.com连接"><img src="../images/social_51.png" title="与51.com连接"/></a></ul>
+            <ul><a href="#" title="与Google连接"><img src="../images/social_gg.png" title="与Google连接"/></a>&nbsp;&nbsp;<a href="#" title="用MSN帐号登录"><img src="../images/social_msn.png" title="用MSN帐号登录"/></a></ul>
+            <ul><a href="#" title="天涯社区用户登录"><img src="../images/social_ty.png" title="天涯社区用户登录接"/></a>&nbsp;&nbsp;<a href="#" title="用豆瓣帐号登录"><img src="../images/social_db.png" title="用豆瓣帐号登录接"/></a></ul>
+            <ul><a href="#" title="与Yahoo!连接"><img src="../images/social_yahoo.png" title="与Yahoo!连接"/></a>&nbsp;&nbsp;<a href="#" title="与百度连接"><img src="../images/social_baidu.png" title="与百度连接"/></a></ul>
+            <ul><a href="#" title="与盛大网络连接"><img src="../images/social_sd.png" title="与盛大网络连接"/></a>&nbsp;&nbsp;<a href="#" title="用开心帐号登录"><img src="../images/social_kx.png" title="用开心帐号登录接"/></a></ul>
+            <ul><a href="#" title="与人人网连接"><img src="../images/social_renren.png" title="与人人网连接"/></a>&nbsp;&nbsp;<a href="#" title="用360帐号登录"><img src="../images/social_360.png" title="用360帐号登录"/></a></ul>
         </div>
     </div>
     
