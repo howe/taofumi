@@ -70,7 +70,7 @@
 
 			<div id="signRight" style="width: 265px">
 				<h3>合作网站帐号登录</h3>
-				<div id="social" style="border: thick; background-color: #F6F6F6" align="center">
+				<div id="social" style="background-color: #F6F6F6" align="center">
 					<ul>
 						<a href="#" title="与新浪微博连接"><img src="../images/social_sina.png" title="与新浪微博连接" />
 						</a>&nbsp;&nbsp;
