@@ -71,13 +71,13 @@
     <div id="signRight" style="width:265px">
     	<h3>合作网站帐号登录</h3>
     	<div id="social" style="border:thick; background-color:#F6F6F6" align="center"> 		
-			<ul><a class="social_sina" href="#" title="与新浪微博连接"></a>&nbsp;&nbsp;<a class="social_tb" href="#" title="用淘宝帐号登录">&nbsp;</a></ul>
-			<ul><a class="social_alipay" href="#" title="支付宝快捷登录"></a>&nbsp;&nbsp;<a class="social_tenpay" href="#" title="与财付通链接">&nbsp;</a></ul>
-            <ul><a class="social_sohu" href="#" title="与搜狐微博连接"></a>&nbsp;&nbsp;<a class="social_163" href="#" title="与网易微博链接">&nbsp;</a></ul>
-            <ul><a class="social_qq" href="#" title="用QQ帐号登录"></a>&nbsp;&nbsp;<a class="social_51" href="#" title="与51.com连接">&nbsp;</a></ul>
-            <ul><a class="social_gg" href="#" title="与Google连接"></a>&nbsp;&nbsp;<a class="social_msn" href="#" title="用MSN帐号登录">&nbsp;</a></ul>
-            <ul><a class="social_ty" href="#" title="天涯社区用户登录"></a>&nbsp;&nbsp;<a class="social_db" href="#" title="用豆瓣帐号登录">&nbsp;</a></ul>
-            <ul><a class="social_yahoo" href="#" title="与Yahoo!连接"></a>&nbsp;&nbsp;<a class="social_baidu" href="#" title="与百度连接">&nbsp;</a></ul>
+			<ul><a class="social_sina" href="#" title="与新浪微博连接">&nbsp;</a>&nbsp;&nbsp;<a class="social_tb" href="#" title="用淘宝帐号登录">&nbsp;</a></ul>
+			<ul><a class="social_alipay" href="#" title="支付宝快捷登录">&nbsp;</a>&nbsp;&nbsp;<a class="social_tenpay" href="#" title="与财付通链接">&nbsp;</a></ul>
+            <ul><a class="social_sohu" href="#" title="与搜狐微博连接">&nbsp;</a>&nbsp;&nbsp;<a class="social_163" href="#" title="与网易微博链接">&nbsp;</a></ul>
+            <ul><a class="social_qq" href="#" title="用QQ帐号登录">&nbsp;</a>&nbsp;&nbsp;<a class="social_51" href="#" title="与51.com连接">&nbsp;</a></ul>
+            <ul><a class="social_gg" href="#" title="与Google连接">&nbsp;</a>&nbsp;&nbsp;<a class="social_msn" href="#" title="用MSN帐号登录">&nbsp;</a></ul>
+            <ul><a class="social_ty" href="#" title="天涯社区用户登录">&nbsp;</a>&nbsp;&nbsp;<a class="social_db" href="#" title="用豆瓣帐号登录">&nbsp;</a></ul>
+            <ul><a class="social_yahoo" href="#" title="与Yahoo!连接">&nbsp;</a>&nbsp;&nbsp;<a class="social_baidu" href="#" title="与百度连接">&nbsp;</a></ul>
             <ul><a class="social_sd" href="#" title="与盛大网络连接">&nbsp;</a>&nbsp;&nbsp;<a class="social_kx" href="#" title="用开心帐号登录">&nbsp;</a></ul>
             <ul><a class="social_renren" href="#" title="与人人网连接">&nbsp;</a>&nbsp;&nbsp;<a class="social_360" href="#" title="用360帐号登录">&nbsp;</a></ul>
         </div>
