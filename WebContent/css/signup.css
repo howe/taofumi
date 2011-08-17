@@ -1,0 +1,77 @@
+#signLeft {	padding: 20px 30px 25px 30px; }
+
+#signLeftWrap { width: 440px; }
+#signRight ul { margin: 0px; }
+#signUpForm ul, #signUpForm ul li { list-style-type: none; margin: 0px; }
+
+.spanLink { color: #00AEF6 !important; }
+.spanLink:hover { cursor: pointer; text-decoration: underline; }
+.plan-inner span.spanLink {
+	font-weight: normal;
+}
+
+.pointer { cursor: pointer; }
+
+/**popup**/
+.outerDIV { background-color: #CCCCCC;  }
+.innerDIV { background-color: #383738; padding: 12px; }
+.innerDIV, .innerDIV div, .innerDIV span, .innerDIV p { color: #FFF; }
+
+.fR { float: right; text-align: left; }
+.fL { float: left; }
+.clearDIV { font-size: 1px; line-height: 1px; height: 0px; clear: both; overflow: hidden; }
+
+.social_sina {
+	background:#fff url(../images/social_sina.png) center no-repeat;
+}
+.social_alipay {
+	background:#fff url(../images/social_alipay.png) center no-repeat;
+}
+.social_sohu {
+	background:#fff url(../images/social_sohu.png) center no-repeat;
+}
+.social_qq {
+	background:#fff url(../images/social_qq.png) center no-repeat;
+}
+.social_gg {
+	background:#fff url(../images/social_gg.png) center no-repeat;
+}
+.social_ty {
+	background:#fff url(../images/social_ty.png) center no-repeat;
+}
+.social_yahoo {
+	background:#fff url(../images/social_yahoo.png) center no-repeat;
+}
+.social_sd {
+	background:#fff url(../images/social_sd.png) center no-repeat;
+}
+.social_renren {
+	background:#fff url(../images/social_renren.png) center no-repeat;
+}
+.social_tb {
+	background:#fff url(../images/social_tb.png) center no-repeat;
+}
+.social_tenpay {
+	background:#fff url(../images/social_tenpay.png) center no-repeat;
+}
+.social_163 {
+	background:#fff url(../images/social_163.png) center no-repeat;
+}
+.social_51 {
+	background:#fff url(../images/social_51.png) center no-repeat;
+}
+.social_msn {
+	background:#fff url(../images/social_msn.png) center no-repeat;
+}
+.social_db {
+	background:#fff url(../images/social_db.png) center no-repeat;
+}
+.social_baidu {
+	background:#fff url(../images/social_baidu.png) center no-repeat;
+}
+.social_kx {
+	background:#fff url(../images/social_kx.png) center no-repeat;
+}
+.social_360 {
+	background:#fff url(../images/social_360.png) center no-repeat;
+}

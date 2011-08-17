@@ -1,0 +1,598 @@
+#upgradeContainer {
+	width: 664px;
+	margin: 20px auto 0px;
+	padding: 0px 0px 50px;
+}
+
+.upgradeModule {
+	background-color: #EFEFEF;
+	padding: 20px 155px 30px 30px;
+	margin-bottom: 15px;
+}
+
+#upgradeContainer h2 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #17A8DC;
+	border-bottom: solid 1px #A7A7A7;
+}
+
+#otherQuestion {
+	padding: 11px 0px 15px;
+	width: 330px;
+}
+
+#additionalUsersWrap {
+	padding: 40px 50px 0px 0px;
+}
+
+#addUserBut img {
+	cursor: pointer;
+}
+
+#additionalUsers .spanLink.fR {
+	font-weight: normal;
+	font-size: 12px;
+}
+
+#paymentOptions {
+	padding: 8px 0px 0px 30px;
+}
+
+#otherUsers {
+	padding-left: 30px;
+}
+
+#paymentOptions .i {
+	font-size: 12px;
+	font-weight: normal;
+	font-style: italic;
+}
+
+#paymentOptions * {
+	font-size: 14px;
+}
+
+#paymentOptions li {
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+#paymentOptions li span {
+	font-weight: normal;
+}
+
+#saveMoneyMsg {
+	color: #EA4003;
+}
+
+#upgradeContainer #paymentMethod {
+	margin-left: 45px;
+	width: 380px;
+	padding-top: 20px;
+}
+
+#paymentMethods {
+	padding-bottom: 15px;
+	border-bottom: dotted 1px #CCC;
+	margin-bottom: 15px;
+}
+
+.payWithHead {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+#existingCardInfo {
+  margin-left: 45px;
+  padding-bottom: 35px;
+}
+#accountVerification td, #creditCardArea td {
+	padding-bottom: 10px;
+}
+
+#creditCardArea .b {
+	width: 105px;
+}
+
+#cardnumber, #upgradeContainer #first_name, #upgradeContainer #last_name {
+	width: 177px;
+}
+
+#upgradeContainer #cvv2 {
+	width: 50px;
+}
+
+#accountVerification {
+	padding: 20px 0px 0px 30px;
+}
+
+#accountVerification .b {
+	width: 75px;
+	font-weight: bold !important;
+}
+
+#accountVerification #answer {
+	width: 220px;
+}
+
+
+#accountVerification #phone {
+	width: 200px;
+}
+
+#additionalUsers li {
+	padding-bottom: 10px;
+	margin-bottom: 20px !important;
+	border-bottom: dotted 1px #CCC;
+}
+
+.additionalUser {
+	border-bottom: solid 1px #A7A7A7;
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+#additionalUsers .b {
+	width: 120px;
+}
+
+#additionalUsers input[type="text"] {
+	width: 100%;
+}
+
+#additionalUsers  td {
+	padding-bottom: 10px;
+}
+
+
+#authorization {
+	width: 205px;
+	position: relative;
+	padding: 5px 0px;
+}
+
+#corporateCodeArea img {
+	position: relative;
+	top: 7px;
+}
+
+#corporateCodeArea, #discountCodeArea {
+	margin: 15px 0px 0px 26px;
+	padding-top: 15px;
+	border-top: solid 1px #A7A7A7;
+}
+
+body.type_MyAccount.subtype_Hold #discountCodeArea {
+  margin: 0px 0px 0px 15px;
+  border-top: 0px;
+}
+
+#authorizationError, #acceptedAuthorization {
+	margin-left: 142px;
+	padding-top: 5px;
+}
+
+body.type_MyAccount.subtype_BillingInfo #authorizationError, 
+body.type_MyAccount.subtype_BillingInfo #acceptedAuthorization {
+  margin-left: 0px;
+}
+
+#acceptedAuthImg, #acceptedCouponImg {
+	width: 25px;
+	float: left;
+}
+
+#acceptedAuthImg img, #acceptedCouponImg img {
+	width: 18px;
+	height: 18px;
+  top: 4px;
+}
+#discountCodeArea.neverBefore #acceptedCouponImg {
+  margin-left: 118px !important;
+}
+
+#acceptedAuthTxt, #acceptedCouponTxt  {
+	width: 250px;
+	float: left;
+	
+}
+
+#acceptedAuthTxt p:first-child, #acceptedCouponTxt p:first-child {
+	color: #36a83c; 
+	font-weight: bold; 
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+#acceptedAuthTxt p + p {
+	margin: 0px;
+}
+
+#corporateCodeArea .b {
+	padding-bottom: 5px;
+}
+
+
+#placeOrder {
+	margin-top: 25px;
+}
+
+#orderSummaryWrap {
+	
+}
+
+#pleaseReview {
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 22px;
+	margin-bottom: 34px;
+}
+
+#orderSummaryModule #orderSummary {
+	font-size: 16px;
+	padding-bottom: 1px;
+	font-weight: bold;
+	border-bottom: solid 1px #A7A7A7;
+	margin-bottom: 19px;
+}
+
+#additionalUsersSummary li:first-child *{
+	font-size: 11px;
+	font-weight: normal;
+}
+
+#additionalUsersSummary, #additionalUsersSummary li  {
+	width: 445px;
+}
+
+#additionalUsersSummary li:first-child {
+	padding-bottom: 13px !important;
+}
+#additionalUsersSummary li {
+	padding-bottom: 6px;
+}
+
+.summary_user {
+	width: 310px;
+}
+
+.summary_user_price {
+	width: 100px;
+	text-align: right;
+}
+
+.summary_user_edit {
+	width: 35px;
+	text-align: right;
+}
+
+.summary_user, .summary_user span {
+	font-weight: bold;
+}
+
+#summaryCosts {
+	width: 385px;
+}
+
+body.type_MyAccount #summaryCosts {
+  width: 410px;
+}
+
+#summaryNoteWrap, #newCardNote {
+	background-color: #FFF;
+	margin: 15px 0px;
+}
+
+#summaryNoteWrap div, #newCardNote div {
+	padding: 5px;
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style:italic;
+}
+
+#summaryCouponTotal {
+	padding: 16px 0px;
+	border-top: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+}
+
+#summaryCouponTotal .spanLink {
+  font-weight: bold;
+}
+
+#discountCk  {
+  position: relative;
+  top: 2px;
+}
+
+
+#totalLine {
+	text-align: right;
+	padding-top: 15px;
+}
+
+
+#totalLine, #totalLine span {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+#totalTxt {
+	color: #9c9c9c;
+}
+
+#couponLine {
+	
+}
+
+#reviewTerms {
+	padding: 15px 0px 20px;
+}
+
+#ARBError {
+	padding-bottom: 10px;
+}
+
+#couponError {
+	padding-top: 5px;
+}
+
+.couponSavings {
+	color: #009900;
+}
+
+#paymentError {
+	background-color: #f3dad8;
+	padding: 15px 10px;
+}
+
+#paymentError div:first-child {
+	font-weight: bold;
+	color: #FF0000;
+}
+
+#signLeftWrap {
+	float: left;
+	width: 480px;
+	background-color: #F5F5F5;
+}
+
+#signLeft {
+	padding: 20px 55px 25px 30px;
+}
+
+#signLeft h2 {
+	font-size: 14px;
+	padding-bottom: 1px;
+	border-bottom: solid 1px #A7A7A7;
+	margin-bottom: 20px;
+}
+
+#signRight {
+	float: right;
+	text-align: left;
+	width: 320px;
+}
+
+#signLeft table td {
+	padding-bottom: 13px;
+}
+
+#signLeft table tr td:first-child {
+	width: 135px;
+	font-weight: bold;
+}
+
+#signLeft input {
+	width: 258px;
+}
+
+#split {
+	height: 13px;
+	line-height: 1px;
+	font-size: 1px;
+	border-top: dotted 1px #A7A7A7;
+}
+
+#signup {
+	padding: 42px 0px 10px;
+}
+
+#heardWrap {
+	padding: 10px 0px;
+	margin: 15px 0px 20px;
+	border-top: dotted 1px #A7A7A7;
+	border-bottom: dotted 1px #A7A7A7;
+}
+
+#heardWrap p {
+	font-size: 11px;
+	font-family:Arial, Helvetica, sans-serif;
+	padding-bottom: 7px;
+}
+
+#signUpBut img {
+	cursor: pointer;
+}
+
+#signRight h3 {
+	font-size: 14px;
+	padding-bottom: 2px;
+	border-bottom: solid 1px #DFDFDF;
+	margin-bottom: 15px;
+	margin-top: 0px;
+}
+
+#signRight div {
+	font-weight: bold;
+	line-height: 19px;
+	padding-bottom: 25px;
+	font-size: 12px;
+}
+
+#signRight ul li {
+	list-style-type: disc;
+	list-style-position:outside;
+	margin-left: 15px;
+	padding-bottom: 7px;
+}
+
+#summWrap, #summCap {
+	background-color: #F5F5F5;
+}
+
+#summCap {
+	height: 3px;
+	overflow: none;
+}
+
+.brSW, .blSW, .tlSW, .trSW {
+	width: 3px;
+	height: 3px;
+	overflow: none;
+}
+
+.tlSW, .blSW {
+	float: left;
+}
+
+.trSW, .brSW {
+	float: right;
+}
+
+.tlSW {
+	background-image: url('/_images/ver2/corners/tl_f5f5f5_3x3.gif');
+}
+
+.trSW {
+	background-image: url('/_images/ver2/corners/tr_f5f5f5_3x3.gif');
+}
+
+.blSW {
+	background-image: url('/_images/ver2/corners/bl_f5f5f5_3x3.gif');
+}
+
+.brSW {
+	background-image: url('/_images/ver2/corners/br_f5f5f5_3x3.gif');
+}
+
+#confWrap {
+	width: 668px;
+}
+
+#summ {
+	padding: 37px 150px 30px 45px;
+}
+
+#confirmation {
+	padding-top: 42px;
+}
+
+#confirmation, #thank_you {
+	padding-bottom: 15px;
+}
+
+#receive_email {
+	padding-bottom: 7px;
+	border-bottom: solid 1px #A7A7A7;
+	margin-bottom: 15px;
+}
+
+#confExp {
+	font-size: 14px;
+	padding-bottom: 22px;
+}
+
+#printerPage img {
+	cursor: pointer;
+	position: relative;
+	top: 15px;
+}
+
+#printerPage {
+	padding-bottom: 37px;
+}
+
+#confWrap h2 {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 18px;
+	padding-bottom: 5px;
+	border-bottom: solid 1px #CCC;
+	margin-bottom: 20px;
+}
+
+#confWrap #orderSummary {
+	width: 370px;
+	padding: 0px;
+}
+
+#confWrap #paymentMethod div, #confWrap #orderNumber div {
+	color: #17A8DC;
+	padding-bottom: 7px;
+}
+
+#confWrap #paymentMethod p, #orderNumber p {
+	padding-bottom: 2px;
+	margin: 0px !important;
+	text-indent: 0 !important;
+}
+
+#confWrap #paymentMethod {
+	float: left;
+  padding-bottom: 15px;
+}
+
+#orderNumber {
+	float: right;
+	text-align: left;
+}
+
+#orderNumber + .clearDIV {
+	padding-top: 10px;
+	border-top: solid 1px #CCC;
+	margin-bottom: 20px;
+}
+
+#subscriptions tr th + th, #subscriptions td + td {
+	text-align: right;
+}
+
+#subscriptions tr th  {
+	background-color: transparent !important;
+	color: #17A8DC;
+	padding: 0px 0px 15px 0px !Important;
+	text-align: left;
+	font-weight: normal;
+}
+
+#subscriptions {
+	width: 100%;
+}
+
+#subscriptions tr td {
+	padding-bottom: 6px;
+	font-weight: bold;
+}
+
+#subscriptions tr td:first-child {
+	width: 290px;
+}
+
+#sumTotal {
+	margin-top: 23px;
+	border-top: solid 1px #CCC;
+	padding-top: 17px;
+	text-align: right;
+}
+
+#sumTotal, #sumTotal span {
+	font-size: 14px;
+}
+
+#sumTotal span {
+	font-weight: bold;
+}
