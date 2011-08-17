@@ -5,10 +5,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>注册帐号 - 淘富蜜 - 淘宝商家辅助秘书</title>
-	<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection">
-  	<link rel="stylesheet" href="/css/home.css" type="text/css">
-  	<link rel="stylesheet" href="/css/signup_002.css" type="text/css">
-	<link rel="stylesheet" href="/css/signup.css" type="text/css">
+	<link rel="stylesheet" href="../css/screen.css" type="text/css" media="screen, projection">
+  	<link rel="stylesheet" href="../css/home.css" type="text/css">
+  	<link rel="stylesheet" href="../css/signup_002.css" type="text/css">
+	<link rel="stylesheet" href="../css/signup.css" type="text/css">
 </head>
 
 <body class="container">
