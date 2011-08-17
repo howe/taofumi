@@ -12,4 +12,10 @@ public class MainModule {
     public String doShare() {
         return "";
     }
+
+    @At("/user")
+    @Ok("jsp:jsp.user.index")
+    public String doUser() {
+        return null;
+    }
 }
