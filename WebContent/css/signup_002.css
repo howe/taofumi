@@ -1,4 +1,4 @@
-#upgradeContainer {
+﻿#upgradeContainer {
 	width: 664px;
 	margin: 20px auto 0px;
 	padding: 0px 0px 50px;
@@ -358,6 +358,7 @@ body.type_MyAccount #summaryCosts {
 	float: left;
 	width: 480px;
 	background-color: #F5F5F5;
+	border: 1px solid #ddd;
 }
 
 #signLeft {
@@ -375,6 +376,9 @@ body.type_MyAccount #summaryCosts {
 	float: right;
 	text-align: left;
 	width: 320px;
+	padding: 10px;
+	background: #f5f5f5;
+	border:1px solid #ddd;
 }
 
 #signLeft table td {
@@ -420,7 +424,7 @@ body.type_MyAccount #summaryCosts {
 
 #signRight h3 {
 	font-size: 14px;
-	padding-bottom: 2px;
+	padding-bottom: 4px;
 	border-bottom: solid 1px #DFDFDF;
 	margin-bottom: 15px;
 	margin-top: 0px;
