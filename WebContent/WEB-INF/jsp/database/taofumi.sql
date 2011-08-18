@@ -50,6 +50,20 @@ CREATE TABLE `tb_openid` (
 -- ----------------------------
 
 -- ----------------------------
+-- Table structure for `tb_mobibind`
+-- ----------------------------
+DROP TABLE IF EXISTS `tb_mobibind`;
+CREATE TABLE `tb_mobibind` (
+  `userId` varchar(255) DEFAULT NULL,
+  `mobiNumber` varchar(21) DEFAULT NULL,
+  `isVerify` char(1) DEFAULT '0' NULL COMMENT '0未验证/1已验证'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of tb_mobibind
+-- ----------------------------
+
+-- ----------------------------
 -- Table structure for `tb_relation`
 -- ----------------------------
 DROP TABLE IF EXISTS `tb_relation`;
