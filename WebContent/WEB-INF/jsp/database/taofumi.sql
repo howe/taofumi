@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50207
 File Encoding         : 65001
 
-Date: 2011-08-17 15:00:45
+Date: 2011-08-21 18:10:15
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -20,7 +20,7 @@ SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 DROP TABLE IF EXISTS `tb_log`;
 CREATE TABLE `tb_log` (
-  `id` varchar(255) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `operTime` datetime DEFAULT NULL,
   `keyword` varchar(200) DEFAULT NULL,
   `referrer` varchar(1000) DEFAULT NULL,
@@ -35,13 +35,30 @@ CREATE TABLE `tb_log` (
 -- ----------------------------
 
 -- ----------------------------
+-- Table structure for `tb_mobibind`
+-- ----------------------------
+DROP TABLE IF EXISTS `tb_mobibind`;
+CREATE TABLE `tb_mobibind` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'ID',
+  `userId` int(11) DEFAULT NULL,
+  `mobiNumber` varchar(21) DEFAULT NULL,
+  `isVerify` char(1) DEFAULT '0' COMMENT '0未验证/1已验证',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of tb_mobibind
+-- ----------------------------
+
+-- ----------------------------
 -- Table structure for `tb_openid`
 -- ----------------------------
 DROP TABLE IF EXISTS `tb_openid`;
 CREATE TABLE `tb_openid` (
-  `id` varchar(255) NOT NULL,
-  `userId` varchar(255) DEFAULT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `userId` int(11) DEFAULT NULL,
   `openIdCode` varchar(200) DEFAULT NULL,
+  `socialId` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -50,25 +67,11 @@ CREATE TABLE `tb_openid` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for `tb_mobibind`
--- ----------------------------
-DROP TABLE IF EXISTS `tb_mobibind`;
-CREATE TABLE `tb_mobibind` (
-  `userId` varchar(255) DEFAULT NULL,
-  `mobiNumber` varchar(21) DEFAULT NULL,
-  `isVerify` char(1) DEFAULT '0' NULL COMMENT '0未验证/1已验证'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of tb_mobibind
--- ----------------------------
-
--- ----------------------------
 -- Table structure for `tb_relation`
 -- ----------------------------
 DROP TABLE IF EXISTS `tb_relation`;
 CREATE TABLE `tb_relation` (
-  `id` varchar(255) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `userId` varchar(255) DEFAULT NULL,
   `urlId` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -83,7 +86,7 @@ CREATE TABLE `tb_relation` (
 -- ----------------------------
 DROP TABLE IF EXISTS `tb_url`;
 CREATE TABLE `tb_url` (
-  `id` varchar(255) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `keyword` varbinary(200) DEFAULT NULL,
   `url` varchar(1000) DEFAULT NULL,
   `tbkUrl` varchar(1500) DEFAULT NULL,
@@ -105,7 +108,7 @@ CREATE TABLE `tb_url` (
 -- ----------------------------
 DROP TABLE IF EXISTS `tb_user`;
 CREATE TABLE `tb_user` (
-  `id` varchar(255) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `userName` varchar(20) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
   `email` varchar(100) DEFAULT NULL,
