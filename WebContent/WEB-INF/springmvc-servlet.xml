@@ -16,4 +16,13 @@
 		<property name="prefix" value="/WEB-INF/jsp/" />  
 		<property name="suffix" value=".jsp" />  
 	</bean>
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/taofumi?useUnicode=true&amp;characterEncoding=UTF-8" />
+		<property name="username" value="root" />
+		<property name="password" value="12345678" />
+	</bean>
+	<bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
 </beans>
