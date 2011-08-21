@@ -1,4 +1,4 @@
-package com.taofumi.action;
+package com.taofumi.share.action;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

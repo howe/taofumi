@@ -1,4 +1,4 @@
-package com.taofumi.entity;
+package com.taofumi.share.entity;
 
 import lombok.Data;
 
