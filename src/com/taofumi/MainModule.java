@@ -24,7 +24,7 @@ public class MainModule {
         return "";
     }
 
-    @At("/user")
+    @At("/share/user")
     @Ok("jsp:jsp.user.signup")
     public String doUser() {
         return null;
