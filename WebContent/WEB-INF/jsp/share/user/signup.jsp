@@ -26,7 +26,7 @@ ul,li{list-style-type:none;}
 		<div id="pageInner">
 			<img src="../images/signup.gif" id="pageTitle" height="35">
 			<hr style="height: 1px; margin-bottom: 35px; background: #444444;">
-			<form id="signUpForm" name="signUpForm">
+			<form id="signUpForm" name="signUpForm" onsubmit="fasle">
 				<div id="signLeftWrap">
 					<div id="signLeft">
 						<h2>您的注册信息</h2>
@@ -64,9 +64,8 @@ ul,li{list-style-type:none;}
 
 
 						<div id="signUpBut" align="right">
-							<input src="../images/continue.gif" alt="Continue" title="Continue" style="width: 106px; height: 30px;"
-								type="image" />&nbsp;&nbsp;<input src="../images/undo.gif" alt="Continue" title="Continue"
-								style="width: 106px; height: 30px;" type="image" />
+							<input src="../images/continue.gif" alt="Continue" title="Continue" style="width: 106px; height: 30px;" type="image" onclick="alert(1)" />&nbsp;&nbsp;
+							<input src="../images/undo.gif" alt="Continue" title="Continue" style="width: 106px; height: 30px;" type="image" />
 						</div>
 					</div>
 				</div>
