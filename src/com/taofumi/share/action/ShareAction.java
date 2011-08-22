@@ -2,8 +2,10 @@ package com.taofumi.share.action;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.taofumi.share.entity.User;
@@ -29,9 +31,12 @@ public class ShareAction {
         return mv;
     }
 
-    @RequestMapping(value = "/save", method = RequestMethod.GET)
-    public ModelAndView addUser(User user) {
+    @RequestMapping(value = "/save", method = RequestMethod.POST)
+    @ResponseBody
+    public ModelMap addUser(User user) {
         userService.addUser(user);
-        return null;
+        ModelMap mm = new ModelMap();
+        mm.put("success", "true");
+        return mm;
     }
 }
