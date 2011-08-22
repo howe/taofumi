@@ -15,6 +15,20 @@ public class ShareAction {
     @Autowired
     UserService userService;
 
+    @RequestMapping(method = RequestMethod.GET)
+    public ModelAndView index() {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("share/index");
+        return mv;
+    }
+
+    @RequestMapping(value = "/signup", method = RequestMethod.GET)
+    public ModelAndView signup() {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("share/user/signup");
+        return mv;
+    }
+
     @RequestMapping(value = "/save", method = RequestMethod.GET)
     public ModelAndView addUser(User user) {
         userService.addUser(user);

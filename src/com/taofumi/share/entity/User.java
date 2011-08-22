@@ -1,16 +1,16 @@
 package com.taofumi.share.entity;
 
 /**
- * 用户类
+ * 用户类 所有属性名全部小写
  * 
  * @author yangq
  */
 public class User {
     private int    id;
-    private String userName;
+    private String username;
     private String password;
     private String email;
-    private String safeCode;
+    private String safecode;
     private String identify;
     private String status;
 
@@ -22,12 +22,12 @@ public class User {
         this.id = id;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
@@ -46,12 +46,12 @@ public class User {
         this.email = email;
     }
 
-    public String getSafeCode() {
-        return safeCode;
+    public String getSafecode() {
+        return safecode;
     }
 
-    public void setSafeCode(String safeCode) {
-        this.safeCode = safeCode;
+    public void setSafecode(String safecode) {
+        this.safecode = safecode;
     }
 
     public String getIdentify() {
