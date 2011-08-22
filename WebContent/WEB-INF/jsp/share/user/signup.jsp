@@ -26,7 +26,7 @@ ul,li{list-style-type:none;}
 		<div id="pageInner">
 			<img src="../../images/signup.gif" id="pageTitle" height="35">
 			<hr style="height: 1px; margin-bottom: 35px; background: #444444;">
-			<form id="signUpForm" name="signUpForm" onsubmit="fasle">
+			<form id="signUpForm" name="signUpForm" action="save.action" method="post">
 				<div id="signLeftWrap">
 					<div id="signLeft">
 						<h2>您的注册信息</h2>
