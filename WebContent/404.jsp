@@ -5,13 +5,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>404错误: 找不到页 - 淘富蜜 - 淘宝商家辅助秘书</title>
-<link rel="stylesheet" href="../css/home.css" type="text/css">
+<link rel="stylesheet" href="/css/home.css" type="text/css">
 </head>
 
 <body>
-<div align="center" style="vertical-align:middle;"><img src="../images/404.png" alt="404错误: 找不到页面" width="500" height="450" border="0" usemap="#Map">
+<div align="center" style="vertical-align:middle;"><img src="/images/404.png" alt="404错误: 找不到页面" width="500" height="450" border="0" usemap="#Map">
   <map name="Map">
-    <area shape="rect" coords="300,365,350,400" href="../index.jsp" target="_self">
+    <area shape="rect" coords="300,365,350,400" href="/index.jsp" target="_self">
   </map>
 </div>
 </body>
