@@ -24,14 +24,14 @@ public class ShareAction {
         return mv;
     }
 
-    @RequestMapping(value = "/signup", method = RequestMethod.GET)
+    @RequestMapping(value = "/user/signup", method = RequestMethod.GET)
     public ModelAndView signup() {
         ModelAndView mv = new ModelAndView();
         mv.setViewName("share/user/signup");
         return mv;
     }
 
-    @RequestMapping(value = "/save", method = RequestMethod.POST)
+    @RequestMapping(value = "/user/save", method = RequestMethod.POST)
     @ResponseBody
     public ModelMap addUser(User user) {
         userService.addUser(user);
