@@ -28,7 +28,7 @@ public class UserDao {
      * @return id
      */
     public Integer addUser(User user) {
-        String sql = "insert into tb_user values(:id,:userName,:password,:email,:safeCode,:identify,:status)";
+        String sql = "insert into tb_user values(:id,:username,:password,:email,:safecode,:identify,:status)";
         SqlParameterSource sqs = new BeanPropertySqlParameterSource(user);
         KeyHolder keyHolder = new GeneratedKeyHolder();
         simpleJdbcTemplate.getNamedParameterJdbcOperations().update(sql, sqs, keyHolder);
