@@ -21,13 +21,18 @@ public class UserDao {
         this.simpleJdbcTemplate = new SimpleJdbcTemplate(dataSource);
     }
 
-    // 添加用户
-    public void addUser(User user) {
+    /**
+     * 添加用户并返回该用户主键
+     * 
+     * @param user
+     * @return id
+     */
+    public Integer addUser(User user) {
         String sql = "insert into tb_user values(:id,:userName,:password,:email,:safeCode,:identify,:status)";
         SqlParameterSource sqs = new BeanPropertySqlParameterSource(user);
         KeyHolder keyHolder = new GeneratedKeyHolder();
         simpleJdbcTemplate.getNamedParameterJdbcOperations().update(sql, sqs, keyHolder);
-        System.out.println(keyHolder.getKey().intValue());
+        return keyHolder.getKey().intValue();
     }
 
 }
