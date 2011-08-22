@@ -4,10 +4,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>注册帐号 - 淘富蜜 - 淘宝商家辅助秘书</title>
-<link rel="stylesheet" href="../css/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="../css/home.css" type="text/css">
-<link rel="stylesheet" href="../css/signup_002.css" type="text/css">
-<link rel="stylesheet" href="../css/signup.css" type="text/css">
+<link rel="stylesheet" href="../../css/screen.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="../../css/home.css" type="text/css">
+<link rel="stylesheet" href="../../css/signup_002.css" type="text/css">
+<link rel="stylesheet" href="../../css/signup.css" type="text/css">
 <style type="text/css">
 *{margin:0;padding:0;}
 ul,li{list-style-type:none;}
@@ -24,7 +24,7 @@ ul,li{list-style-type:none;}
 		<div class="clear"></div>
 
 		<div id="pageInner">
-			<img src="../images/signup.gif" id="pageTitle" height="35">
+			<img src="../../images/signup.gif" id="pageTitle" height="35">
 			<hr style="height: 1px; margin-bottom: 35px; background: #444444;">
 			<form id="signUpForm" name="signUpForm" onsubmit="fasle">
 				<div id="signLeftWrap">
@@ -64,8 +64,8 @@ ul,li{list-style-type:none;}
 
 
 						<div id="signUpBut" align="right">
-							<input src="../images/continue.gif" alt="Continue" title="Continue" style="width: 106px; height: 30px;" type="image" onclick="alert(1)" />&nbsp;&nbsp;
-							<input src="../images/undo.gif" alt="Continue" title="Continue" style="width: 106px; height: 30px;" type="image" />
+							<input src="../../images/continue.gif" alt="Continue" title="Continue" style="width: 106px; height: 30px;" type="image" onclick="alert(1)" />&nbsp;&nbsp;
+							<input src="../../images/undo.gif" alt="Continue" title="Continue" style="width: 106px; height: 30px;" type="image" />
 						</div>
 					</div>
 				</div>
