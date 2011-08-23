@@ -1,10 +1,14 @@
 package com.taofumi.share.dao;
 
+import java.util.List;
+
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
+import org.springframework.jdbc.core.simple.ParameterizedBeanPropertyRowMapper;
 import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
@@ -28,6 +32,8 @@ public class UserDao {
      * @return id
      */
     public Integer addUser(User user) {
+        /** 用户密码MD5加密 */
+
         String sql = "insert into tb_user values(:id,:username,:password,:email,:safecode,:identify,:status)";
         SqlParameterSource sqs = new BeanPropertySqlParameterSource(user);
         KeyHolder keyHolder = new GeneratedKeyHolder();
@@ -35,4 +41,62 @@ public class UserDao {
         return keyHolder.getKey().intValue();
     }
 
+    /**
+     * 通过用户表主键删除该用户
+     * 
+     * @param id
+     * @return
+     */
+    public boolean delUser(String id) {
+        String sql = "delete from tb_user where id=?";
+        int rs = simpleJdbcTemplate.update(sql, id);
+        if (rs > 0) {
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * 修改用户
+     * 
+     * @param user
+     * @return
+     */
+    public boolean updateUser(User user) {
+        /** 用户密码MD5加密 */
+
+        String sql = "update tb_user set username=?,password=?,email=?,safecode=?,identify=?,status=? where id=?";
+        int rs = simpleJdbcTemplate.update(sql, user.getUsername(), user.getPassword(), user.getEmail(),
+                user.getSafecode(), user.getIdentify(), user.getStatus(), user.getId());
+        if (rs > 0) {
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * 通过用户主键查询用户
+     * 
+     * @param id
+     * @return
+     */
+    @SuppressWarnings("deprecation")
+    public User queryUserById(String id) {
+        String sql = "select * from tb_user where id=";
+        User user = simpleJdbcTemplate.queryForObject(sql, ParameterizedBeanPropertyRowMapper.newInstance(User.class),
+                id);
+        return user;
+    }
+
+    /**
+     * 查询所有用户
+     * 
+     * @return
+     */
+    @SuppressWarnings({ "unchecked", "rawtypes" })
+    public List<User> queryAllUser() {
+        String sql = "select * from tb_user";
+        List<User> list = simpleJdbcTemplate.getJdbcOperations().query(sql, new BeanPropertyRowMapper(User.class));
+        return list;
+    }
 }

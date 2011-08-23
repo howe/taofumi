@@ -1,5 +1,7 @@
 package com.taofumi.share.action;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -38,5 +40,62 @@ public class ShareAction {
         ModelMap mm = new ModelMap();
         mm.put("success", "true");
         return mm;
+    }
+
+    /**
+     * 通过用户表主键删除该用户
+     * 
+     * @param id
+     * @return
+     */
+    @RequestMapping(value = "/user/del", method = RequestMethod.POST)
+    public ModelMap delUser(String id) {
+        ModelMap mm = new ModelMap();
+        if (userService.delUser(id)) {
+            mm.put("success", "true");
+        } else {
+            mm.put("success", "false");
+        }
+        return mm;
+    }
+
+    /**
+     * 修改用户
+     * 
+     * @param user
+     * @return
+     */
+    @RequestMapping(value = "/user/update", method = RequestMethod.POST)
+    public ModelMap updateUser(User user) {
+        ModelMap mm = new ModelMap();
+        if (userService.updateUser(user)) {
+            mm.put("success", "true");
+        } else {
+            mm.put("success", "false");
+        }
+        return mm;
+    }
+
+    /**
+     * 通过用户主键查询用户
+     * 
+     * @param id
+     * @return
+     */
+    @RequestMapping(value = "/user/query", method = RequestMethod.POST)
+    @ResponseBody
+    public User queryUserById(String id) {
+        return userService.queryUserById(id);
+    }
+
+    /**
+     * 查询所有用户
+     * 
+     * @return
+     */
+    @RequestMapping(value = "/user/queryall", method = RequestMethod.POST)
+    @ResponseBody
+    public List<User> queryAllUser() {
+        return userService.queryAllUser();
     }
 }
