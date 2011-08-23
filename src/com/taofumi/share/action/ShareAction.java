@@ -93,7 +93,7 @@ public class ShareAction {
      * 
      * @return
      */
-    @RequestMapping(value = "/user/queryall", method = RequestMethod.POST)
+    @RequestMapping(value = "/user/queryalld", method = RequestMethod.POST)
     @ResponseBody
     public List<User> queryAllUser() {
         return userService.queryAllUser();
