@@ -48,7 +48,7 @@ public class ShareAction {
      * @param id
      * @return
      */
-    @RequestMapping(value = "/user/del", method = RequestMethod.POST)
+    @RequestMapping(value = "/user/del", method = RequestMethod.GET)
     public ModelMap delUser(String id) {
         ModelMap mm = new ModelMap();
         if (userService.delUser(id)) {
@@ -65,7 +65,7 @@ public class ShareAction {
      * @param user
      * @return
      */
-    @RequestMapping(value = "/user/update", method = RequestMethod.POST)
+    @RequestMapping(value = "/user/update", method = RequestMethod.GET)
     public ModelMap updateUser(User user) {
         ModelMap mm = new ModelMap();
         if (userService.updateUser(user)) {
@@ -82,7 +82,7 @@ public class ShareAction {
      * @param id
      * @return
      */
-    @RequestMapping(value = "/user/query", method = RequestMethod.POST)
+    @RequestMapping(value = "/user/query", method = RequestMethod.GET)
     @ResponseBody
     public User queryUserById(String id) {
         return userService.queryUserById(id);
@@ -93,7 +93,7 @@ public class ShareAction {
      * 
      * @return
      */
-    @RequestMapping(value = "/user/queryalld", method = RequestMethod.POST)
+    @RequestMapping(value = "/user/queryalld", method = RequestMethod.GET)
     @ResponseBody
     public List<User> queryAllUser() {
         return userService.queryAllUser();
