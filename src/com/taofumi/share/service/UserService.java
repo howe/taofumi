@@ -52,7 +52,7 @@ public class UserService {
      * @param id
      * @return
      */
-    public User queryUserById(String id) {
+    public User queryUserById(int id) {
         return dao.queryUserById(id);
     }
 

@@ -1,14 +1,16 @@
 package com.taofumi.share.dao;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.List;
 
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
-import org.springframework.jdbc.core.simple.ParameterizedBeanPropertyRowMapper;
 import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
@@ -80,11 +82,23 @@ public class UserDao {
      * @param id
      * @return
      */
-    @SuppressWarnings("deprecation")
-    public User queryUserById(String id) {
-        String sql = "select * from tb_user where id=";
-        User user = simpleJdbcTemplate.queryForObject(sql, ParameterizedBeanPropertyRowMapper.newInstance(User.class),
-                id);
+    @SuppressWarnings({ "unchecked", "rawtypes" })
+    public User queryUserById(int id) {
+        String sql = "select * from tb_user where id= ?";
+        User user = simpleJdbcTemplate.queryForObject(sql, new RowMapper() {
+            @Override
+            public Object mapRow(ResultSet rs, int rowNum) throws SQLException {
+                User user = new User();
+                user.setId(rs.getInt("id"));
+                user.setUsername(rs.getString("username"));
+                user.setPassword(rs.getString("password"));
+                user.setEmail(rs.getString("email"));
+                user.setSafecode(rs.getString("safecode"));
+                user.setIdentify(rs.getString("identify"));
+                user.setStatus(rs.getString("status"));
+                return user;
+            }
+        }, id);
         return user;
     }
 

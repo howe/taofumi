@@ -84,7 +84,7 @@ public class ShareAction {
      */
     @RequestMapping(value = "/user/query", method = RequestMethod.GET)
     @ResponseBody
-    public User queryUserById(String id) {
+    public User queryUserById(int id) {
         return userService.queryUserById(id);
     }
 
