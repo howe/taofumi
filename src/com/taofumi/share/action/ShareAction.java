@@ -66,6 +66,7 @@ public class ShareAction {
      * @return
      */
     @RequestMapping(value = "/user/update", method = RequestMethod.GET)
+    @ResponseBody
     public ModelMap updateUser(User user) {
         ModelMap mm = new ModelMap();
         if (userService.updateUser(user)) {
@@ -93,9 +94,10 @@ public class ShareAction {
      * 
      * @return
      */
-    @RequestMapping(value = "/user/queryalld", method = RequestMethod.GET)
+    @RequestMapping(value = "/user/queryall", method = RequestMethod.GET)
     @ResponseBody
-    public List<User> queryAllUser() {
-        return userService.queryAllUser();
+    public List<User> queryAllUser(int id) {
+        return userService.queryAllUser(id);
     }
+
 }

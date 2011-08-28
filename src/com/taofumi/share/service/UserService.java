@@ -61,7 +61,7 @@ public class UserService {
      * 
      * @return
      */
-    public List<User> queryAllUser() {
-        return dao.queryAllUser();
+    public List<User> queryAllUser(int id) {
+        return dao.queryAllUser(id);
     }
 }
